@@ -71,6 +71,13 @@ return [
             'after_commit' => false,
         ],
 
+        'redis-sentinel' => [
+            'driver' => 'redis-sentinel',
+            'connection' => 'default',
+            'queue' => 'default',
+            'retry_after' => 90, // Laravel >= 5.4.30
+        ],
+
     ],
 
     /*

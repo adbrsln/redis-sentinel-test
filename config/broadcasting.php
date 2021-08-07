@@ -29,7 +29,10 @@ return [
     */
 
     'connections' => [
-
+        'redis-sentinel' => [
+            'driver' => 'redis-sentinel',
+            'connection' => 'default',
+        ],
         'pusher' => [
             'driver' => 'pusher',
             'key' => env('PUSHER_APP_KEY'),
